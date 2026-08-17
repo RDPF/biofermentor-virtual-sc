@@ -1,0 +1,17 @@
+{
+  "analysis_type": "bounded_parameter_estimation",
+  "dataset_id": "synthetic_calibration_v28",
+  "inputs": {
+    "data_sha256": "07fdd8627b87f36c7543671fa547431a6696ce1be51275ea4fbaeaa5620ec7b6",
+    "initial_parameter_sha256": "94dd0bd808e74c4fbec4eaabfc9f19b6273f9c5a89c599f568aa7a190cd882c5",
+    "metadata_sha256": "2af3877f323da5ddcf1cdcb14541b37c2a703149902a6a03c816ff50c772ea79"
+  },
+  "outputs": {
+    "calibration_parameters.lock.json": "0fee52a1cc5247ea5515217dde8a77a50a17ed00e3910e4633dbb20d656f247f",
+    "fit_result.json": "3bdf8917c6234768b74ae530d8b19d5d00c093731c0f6c48171c23a3cd0fe1fd",
+    "fitted_predictions.csv": "595694dd31d268aa9e59f5040f8399872b8b65b457b0a756fcb8213c32b110be",
+    "optimization_trace.csv": "fec758f9480c2ae64d446433a98ea30a1350907468f03d5aea9583b75ff3f7d5",
+    "optimized_parameters.json": "7044311f5eca8aecba682780b126ddb765060210b49e88a684419a27742d21c0",
+    "parameter_estimation_report.md": "d09355ded26e8dafa622b89f332a1d3c9b06d47f4bb895f1f8ba0e8e284c0d93"
+  }
+}

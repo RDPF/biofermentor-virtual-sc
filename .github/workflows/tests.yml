@@ -1,0 +1,56 @@
+name: scientific-tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scientific-core:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install headless core + tests
+        run: python -m pip install -e ".[test]"
+
+      - name: Validate workflow YAML
+        run: python -c "import yaml; yaml.safe_load(open('.github/workflows/tests.yml', encoding='utf-8'))"
+
+      - name: Verify scientific self-test
+        run: python -m biofermentor.cli --self-test
+
+      - name: Run pytest
+        run: pytest -q
+
+      - name: Verify core imports no GUI stack
+        run: python -c "import sys, biofermentor.core; assert 'tkinter' not in sys.modules; assert 'matplotlib' not in sys.modules"
+
+      - name: Verify validation artifacts are synchronized
+        run: python -m biofermentor.validation_report --output-dir . --check
+
+      - name: Verify external validation infrastructure
+        run: python -m biofermentor.external_validation validation/datasets/synthetic_demo --output-dir validation/reports/ci_synthetic_demo
+
+      - name: Verify zero-fit scientific qualification gate
+        run: python -c "from biofermentor.validation_data import load_dataset_directory,run_zero_fit_validation,qualification; d=load_dataset_directory('validation/datasets/synthetic_demo'); r=run_zero_fit_validation(d); assert qualification(d,r)['status']=='NOT_QUALIFIED'"
+
+      - name: Verify identifiability artifacts are synchronized
+        run: python -m biofermentor.identifiability_report --output-dir . --check
+
+      - name: Verify dataset-specific identifiability mode
+        run: python -m biofermentor.identifiability_report --dataset-dir validation/datasets/synthetic_demo --output-dir validation/reports/ci_identifiability --parameters mu_max Yxs Yps
+
+      - name: Verify parameter estimation smoke test
+        run: python -m biofermentor.parameter_estimation_report validation/datasets/synthetic_calibration_v30 --output-dir validation/reports/ci_fit --preset minimal_growth_ethanol --max-nfev 60
+
+      - name: Verify independent validation smoke test
+        run: python -m biofermentor.independent_validation_report validation/datasets/synthetic_exp3_validation_v30 --calibration-lock validation/reports/synthetic_calibration_v30_fit/calibration_parameters.lock.json --output-dir validation/reports/ci_independent_validation

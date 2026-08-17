@@ -1,0 +1,360 @@
+{
+  "aggregate_mean_NRMSE_range": 1.2015560031575625e-14,
+  "analysis_type": "frozen_parameter_independent_prediction",
+  "calibration_dataset_id": "synthetic_calibration_v28",
+  "calibration_lock_path": "validation/reports/synthetic_calibration_v28_fit/calibration_parameters.lock.json",
+  "calibration_lock_sha256": "0fee52a1cc5247ea5515217dde8a77a50a17ed00e3910e4633dbb20d656f247f",
+  "comparisons": {
+    "DO_pct": {
+      "endpoint_error": -2.842170943040401e-14,
+      "mapping": {
+        "model_variable": "DO_pct"
+      },
+      "metrics": {
+        "MAE": 1.0713046611437511e-12,
+        "MBE": 2.2575880558923184e-13,
+        "NRMSE_range": 2.5513124231789046e-14,
+        "R2": 1.0,
+        "RMSE": 1.7676958484915132e-12,
+        "n": 11
+      },
+      "observed": [
+        76.1587671189353,
+        66.1806555093923,
+        59.2723295801003,
+        50.9500300077629,
+        42.4767301026077,
+        34.0359503364197,
+        29.185096593622,
+        28.1900872548704,
+        38.566797190432,
+        93.7586242799666,
+        97.4758333842678
+      ],
+      "predicted": [
+        76.15876711893534,
+        66.18065550939181,
+        59.27232958009958,
+        50.950030007761995,
+        42.47673010260669,
+        34.03595033641858,
+        29.185096593621765,
+        28.190087254870253,
+        38.56679719043717,
+        93.75862427996852,
+        97.47583338426777
+      ],
+      "residuals_model_minus_observed": [
+        4.263256414560601e-14,
+        -4.831690603168681e-13,
+        -7.176481631177012e-13,
+        -9.023892744153272e-13,
+        -1.0160761121369433e-12,
+        -1.1226575225009583e-12,
+        -2.3447910280083306e-13,
+        -1.4566126083082054e-13,
+        5.172751116333529e-12,
+        1.9184653865522705e-12,
+        -2.842170943040401e-14
+      ]
+    },
+    "N_g_L": {
+      "endpoint_error": -3.2593827810345477e-18,
+      "mapping": {
+        "model_variable": "N"
+      },
+      "metrics": {
+        "MAE": 3.4421453859977136e-15,
+        "MBE": -3.4219595128227106e-15,
+        "NRMSE_range": 9.384758860687283e-15,
+        "R2": 1.0,
+        "RMSE": 4.880034161814372e-15,
+        "n": 11
+      },
+      "observed": [
+        0.52,
+        0.487787356425529,
+        0.448302001043567,
+        0.400288527281517,
+        0.342583690030321,
+        0.274439445603076,
+        0.195982834260584,
+        0.108851790223303,
+        0.0273522279334868,
+        0.000566608177381109,
+        4.30972639956283e-06
+      ],
+      "predicted": [
+        0.52,
+        0.4877873564255291,
+        0.4483020010435658,
+        0.40028852728151526,
+        0.34258369003031686,
+        0.2744394456030708,
+        0.1959828342605763,
+        0.10885179022329333,
+        0.027352227933479002,
+        0.0005666081773807325,
+        4.3097263995595705e-06
+      ],
+      "residuals_model_minus_observed": [
+        0.0,
+        1.1102230246251565e-16,
+        -1.1657341758564144e-15,
+        -1.7208456881689926e-15,
+        -4.163336342344337e-15,
+        -5.162537064506978e-15,
+        -7.688294445529209e-15,
+        -9.672818102046676e-15,
+        -7.799316747991725e-15,
+        -3.7643499428696714e-16,
+        -3.2593827810345477e-18
+      ]
+    },
+    "P_g_L": {
+      "endpoint_error": -5.861977570020827e-14,
+      "mapping": {
+        "model_variable": "P"
+      },
+      "metrics": {
+        "MAE": 5.336135573812002e-14,
+        "MBE": 3.398291749011729e-14,
+        "NRMSE_range": 7.39458531477584e-15,
+        "R2": 1.0,
+        "RMSE": 6.472217625517742e-14,
+        "n": 11
+      },
+      "observed": [
+        0.0,
+        0.532017365736036,
+        1.18555804507369,
+        1.98283875398046,
+        2.94563793145722,
+        4.09034454010716,
+        5.4187026375985,
+        6.89717045457632,
+        8.27660184771112,
+        8.72859954263505,
+        8.75264446889939
+      ],
+      "predicted": [
+        0.0,
+        0.532017365736043,
+        1.1855580450737042,
+        1.9828387539804888,
+        2.9456379314572763,
+        4.090344540107238,
+        5.418702637598596,
+        6.89717045457644,
+        8.2766018477112,
+        8.728599542635003,
+        8.752644468899332
+      ],
+      "residuals_model_minus_observed": [
+        0.0,
+        6.994405055138486e-15,
+        1.4210854715202004e-14,
+        2.886579864025407e-14,
+        5.639932965095795e-14,
+        7.815970093361102e-14,
+        9.592326932761353e-14,
+        1.199040866595169e-13,
+        7.993605777301127e-14,
+        -4.796163466380676e-14,
+        -5.861977570020827e-14
+      ]
+    },
+    "S_g_L": {
+      "endpoint_error": 1.4210854715202004e-13,
+      "mapping": {
+        "model_variable": "S"
+      },
+      "metrics": {
+        "MAE": 1.892627468888267e-13,
+        "MBE": -1.3500311979441904e-13,
+        "NRMSE_range": 9.158481374957099e-15,
+        "R2": 1.0,
+        "RMSE": 2.4098533530651604e-13,
+        "n": 11
+      },
+      "observed": [
+        82.0,
+        80.3776696161756,
+        78.3888911272287,
+        75.9702739446745,
+        73.0629398822121,
+        69.6286946737839,
+        65.6730753462338,
+        61.2772183751449,
+        57.1561558876077,
+        55.7663461321114,
+        55.6871949136169
+      ],
+      "predicted": [
+        82.0,
+        80.37766961617555,
+        78.38889112722872,
+        75.97027394467442,
+        73.0629398822119,
+        69.62869467378361,
+        65.67307534623338,
+        61.27721837514445,
+        57.15615588760742,
+        55.76634613211154,
+        55.68719491361704
+      ],
+      "residuals_model_minus_observed": [
+        0.0,
+        -4.263256414560601e-14,
+        1.4210854715202004e-14,
+        -8.526512829121202e-14,
+        -2.1316282072803006e-13,
+        -2.8421709430404007e-13,
+        -4.263256414560601e-13,
+        -4.476419235288631e-13,
+        -2.8421709430404007e-13,
+        1.4210854715202004e-13,
+        1.4210854715202004e-13
+      ]
+    },
+    "X_g_L": {
+      "endpoint_error": 0.0,
+      "mapping": {
+        "model_variable": "X_total"
+      },
+      "metrics": {
+        "MAE": 2.6786653703228778e-14,
+        "MBE": 2.6786653703228778e-14,
+        "NRMSE_range": 8.626850375668853e-15,
+        "R2": 1.0,
+        "RMSE": 3.5872466235345595e-14,
+        "n": 11
+      },
+      "observed": [
+        1.05,
+        1.30769264339982,
+        1.62354733982688,
+        2.00760273991995,
+        2.46915921318419,
+        3.01419439717816,
+        3.64168405731389,
+        4.33851562273485,
+        4.99023179507299,
+        5.20416410679118,
+        5.20823442777218
+      ],
+      "predicted": [
+        1.05,
+        1.3076926433998282,
+        1.6235473398268951,
+        2.007602739919974,
+        2.4691592131842186,
+        3.0141943971782013,
+        3.641684057313941,
+        4.3385156227349215,
+        4.990231795073045,
+        5.20416410679118,
+        5.20823442777218
+      ],
+      "residuals_model_minus_observed": [
+        0.0,
+        8.215650382226158e-15,
+        1.509903313490213e-14,
+        2.398081733190338e-14,
+        2.842170943040401e-14,
+        4.1300296516055823e-14,
+        5.062616992290714e-14,
+        7.194245199571014e-14,
+        5.5067062021407764e-14,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "data_origin": "synthetic",
+  "data_sha256": "52b7b58323164e31552c592493308dd0876a2dfa879acfd729f5636c3d846dd9",
+  "dataset_id": "synthetic_exp3_validation_v29",
+  "dataset_role": "synthetic_demo",
+  "dynamic_carbon": {
+    "accounted_gC": 68.08808350238247,
+    "carbon_in_gC": 66.608,
+    "co2_emitted_gC": 9.405228292410849,
+    "error_pct": 2.2220806845761323,
+    "feed_gC": 0.0,
+    "final_stored_gC": 58.68285520997162,
+    "initial_gC": 66.608,
+    "interpretation": "Residual is not forced to zero; it exposes unrepresented carbon pools and/or inconsistency in the phenomenological model.",
+    "recovery_pct": 102.22208068457614,
+    "residual_gC": 1.4800835023824703,
+    "status": "PASS",
+    "warnings": []
+  },
+  "dynamic_nitrogen": {
+    "accounted_gN": 1.3020672263958442,
+    "effective_biomass_N_fraction_gN_gX": 0.125,
+    "error_pct": -0.03322638035745366,
+    "feed_gN": 0.0,
+    "final_biomass_gN": 1.302058606943045,
+    "final_dissolved_gN": 8.619452799119141e-06,
+    "initial_gN": 1.3025,
+    "interpretation": "The audit uses 1/Yxn as the model-consistent biomass N fraction. Unrepresented nitrogen released by lysis remains visible as residual.",
+    "nitrogen_in_gN": 1.3025,
+    "recovery_pct": 99.96677361964255,
+    "residual_gN": -0.0004327736041558339,
+    "status": "PASS",
+    "warnings": []
+  },
+  "dynamic_oxygen": {
+    "consumed_mgO2": 5238.811834173341,
+    "error_pct": -0.01211131886040767,
+    "final_dissolved_mgO2": 15.304468105004021,
+    "initial_dissolved_mgO2": 12.0,
+    "interpretation": "This is a numerical consistency identity for the liquid-phase O2 balance. It is not an independent experimental validation of kLa or OUR.",
+    "lhs_mgO2": 5254.752722135849,
+    "recovery_pct": 99.98788868113958,
+    "residual_mgO2": -0.6364198575038245,
+    "rhs_mgO2": 5254.116302278345,
+    "status": "PASS",
+    "transferred_mgO2": 5242.752722135849,
+    "warnings": []
+  },
+  "frozen_fit_parameters": [
+    "mu_max",
+    "Yxs",
+    "Yps"
+  ],
+  "frozen_optimized_values": {
+    "Yps": 0.4399999999999999,
+    "Yxs": 0.16000000000000067,
+    "mu_max": 0.34000000000000546
+  },
+  "metadata_sha256": "96c54d8427291f0c310cf50ac7bd9806b6d0b1cab9aa02b82d5a4f0c6a1f486f",
+  "no_parameter_fitting_performed": true,
+  "optimized_parameter_sha256_from_lock": "c05b73eaa927c5d2f56cd1fb9f8ae85a5fd7c66d381bfc38d876f7f2c001067d",
+  "prediction_parameter_sha256": "c58c3403ee5fca50ba30e359e7f269bc2ccff5f6ecb0d543ac6602d974d7eae9",
+  "qualification": {
+    "qualified_external_validation": false,
+    "reasons": [
+      "dataset role 'synthetic_demo' is not an external-validation role",
+      "data origin 'synthetic' is not external experimental evidence"
+    ],
+    "status": "NOT_QUALIFIED"
+  },
+  "scientific_interpretation": "Frozen parameters from a prior calibration lock were applied to this dataset. No parameters were estimated from this dataset. If the dataset role/origin are real external evidence, this is an independent validation prediction.",
+  "scientific_limitations": [
+    "Independent validation is only as strong as dataset provenance and the prior calibration lock.",
+    "Synthetic datasets can test software behavior but cannot qualify as external experimental validation.",
+    "Good metrics do not prove structural correctness outside the validated experimental domain."
+  ],
+  "software_integrity": {
+    "carbon_error_pct": 2.2220806845761323,
+    "carbon_status": "PASS",
+    "nitrogen_error_pct": -0.03322638035745366,
+    "nitrogen_status": "PASS",
+    "overall_status": "PASS",
+    "oxygen_error_pct": -0.01211131886040767,
+    "oxygen_status": "PASS",
+    "parameter_status": "PASS",
+    "warnings": []
+  }
+}

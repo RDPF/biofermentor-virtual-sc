@@ -1,0 +1,114 @@
+{
+  "analysis_type": "local_sensitivity_and_practical_identifiability",
+  "base_parameter_sha256": "50fc50c2dae3150f7c471a14efc29147371d408e555d3852a9804c89ab9431b6",
+  "dataset": {
+    "data_origin": "synthetic",
+    "data_sha256": "08380da96b972491095d78f1229ce6fc259f8dd1352d233344018f1493e4a5c5",
+    "dataset_id": "synthetic_demo_v25",
+    "metadata_sha256": "cab5f35616be47dc0bd08fd378dc70603b9066d8d5be095048a1048318268072",
+    "role": "synthetic_demo"
+  },
+  "finite_difference_step_robustness": {
+    "max_relative_rms_deviation": [
+      0.00034812444666872057,
+      6.556015231952833e-06,
+      4.3793678618715234e-08
+    ],
+    "parameters": [
+      "mu_max",
+      "Yxs",
+      "Yps"
+    ],
+    "steps": [
+      0.0005,
+      0.001,
+      0.002
+    ]
+  },
+  "identifiability": {
+    "condition_number": 5.8292544964664845,
+    "correlation_matrix": [
+      [
+        1.0,
+        0.23195233059100137,
+        -0.11477857946842651
+      ],
+      [
+        0.23195233059100137,
+        1.0,
+        -0.7100514450498786
+      ],
+      [
+        -0.11477857946842651,
+        -0.7100514450498786,
+        1.0
+      ]
+    ],
+    "highly_correlated_pairs": [],
+    "interpretation": "Practical/local screening only; does not establish structural identifiability.",
+    "low_sensitivity_parameters": [],
+    "method": "local_scaled_sensitivity_SVD_and_column_cosine_screening",
+    "n_parameters": 3,
+    "numerical_rank": 3,
+    "rank_deficiency": 0,
+    "recommended_initial_fit_subset": [
+      "mu_max",
+      "Yxs",
+      "Yps"
+    ],
+    "singular_values": [
+      8.110897855725268,
+      3.663374318742774,
+      1.3914125486615563
+    ],
+    "thresholds": {
+      "absolute_cosine_similarity": 0.95,
+      "low_sensitivity_ratio_to_max_rms": 0.001,
+      "svd_relative_tol": 1e-08
+    }
+  },
+  "ranking": [
+    {
+      "parameter": "mu_max",
+      "peak_scaled_sensitivity": 7.629621240431484,
+      "rms_scaled_sensitivity": 1.2014433922482124
+    },
+    {
+      "parameter": "Yxs",
+      "peak_scaled_sensitivity": 1.2049254471848458,
+      "rms_scaled_sensitivity": 0.49694139366884493
+    },
+    {
+      "parameter": "Yps",
+      "peak_scaled_sensitivity": 0.9982341876969058,
+      "rms_scaled_sensitivity": 0.3357988980683573
+    }
+  ],
+  "schema_version": "1.1",
+  "scientific_limitations": [
+    "This is local practical-identifiability screening, not structural-identifiability proof.",
+    "Results depend on nominal parameters, experiment design, selected outputs and finite-difference step.",
+    "A parameter should not be fitted solely because it ranks as sensitive.",
+    "Dataset-specific sensitivity uses sampling times/observables, but still does not fit parameters."
+  ],
+  "scope": "dataset_specific_prior_to_parameter_estimation",
+  "settings": {
+    "dt_h": 0.01,
+    "n_observation_times": 9,
+    "outputs": [
+      "X_total",
+      "S",
+      "P",
+      "N",
+      "DO_pct"
+    ],
+    "parameters": [
+      "mu_max",
+      "Yxs",
+      "Yps"
+    ],
+    "rel_step": 0.001,
+    "tf_h": 8.0
+  },
+  "software_version": "2.7.0"
+}

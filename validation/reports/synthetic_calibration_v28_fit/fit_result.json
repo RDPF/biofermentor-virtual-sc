@@ -1,0 +1,549 @@
+{
+  "analysis_type": "bounded_parameter_estimation",
+  "bounds": {
+    "Yps": [
+      0.05,
+      0.7
+    ],
+    "Yxs": [
+      0.02,
+      0.8
+    ],
+    "mu_max": [
+      0.02,
+      1.2
+    ]
+  },
+  "comparisons_after_fit": {
+    "P_g_L": {
+      "mapping": {
+        "model_variable": "P"
+      },
+      "metrics": {
+        "MAE": 4.297796686437828e-14,
+        "MBE": 4.060949107851128e-14,
+        "NRMSE_range": 7.784830609154362e-15,
+        "R2": 1.0,
+        "RMSE": 5.850846080186744e-14,
+        "n": 9
+      },
+      "observed": [
+        0.0,
+        0.685143350242367,
+        1.52750703292036,
+        2.54916745990076,
+        3.76151725949491,
+        5.15406045811961,
+        6.60562236516304,
+        7.45314883611894,
+        7.51570120653184
+      ],
+      "predicted": [
+        0.0,
+        0.6851433502423768,
+        1.5275070329203853,
+        2.5491674599008043,
+        3.761517259494983,
+        5.154060458119713,
+        6.605622365163149,
+        7.4531488361189515,
+        7.515701206531829
+      ],
+      "residuals_model_minus_observed": [
+        0.0,
+        9.769962616701378e-15,
+        2.531308496145357e-14,
+        4.440892098500626e-14,
+        7.283063041541027e-14,
+        1.0302869668521453e-13,
+        1.092459456231154e-13,
+        1.1546319456101628e-14,
+        -1.0658141036401503e-14
+      ],
+      "scale": 7.51570120653184
+    },
+    "S_g_L": {
+      "mapping": {
+        "model_variable": "S"
+      },
+      "metrics": {
+        "MAE": 1.152658215788607e-13,
+        "MBE": -9.316004757743535e-14,
+        "NRMSE_range": 6.53457838963052e-15,
+        "R2": 1.0,
+        "RMSE": 1.4866784971895883e-13,
+        "n": 9
+      },
+      "observed": [
+        65.0,
+        62.9038874997609,
+        60.3357471795822,
+        57.2375966653645,
+        53.58871681518,
+        49.4132474274743,
+        45.0492312223207,
+        42.4511009511192,
+        42.2490525242035
+      ],
+      "predicted": [
+        65.0,
+        62.90388749976086,
+        60.335747179582164,
+        57.23759666536437,
+        53.5887168151798,
+        49.41324742747408,
+        45.049231222320415,
+        42.451100951119166,
+        42.2490525242036
+      ],
+      "residuals_model_minus_observed": [
+        0.0,
+        -3.552713678800501e-14,
+        -3.552713678800501e-14,
+        -1.2789769243681803e-13,
+        -1.9895196601282805e-13,
+        -2.2026824808563106e-13,
+        -2.8421709430404007e-13,
+        -3.552713678800501e-14,
+        9.947598300641403e-14
+      ],
+      "scale": 22.7509474757965
+    },
+    "X_g_L": {
+      "mapping": {
+        "model_variable": "X_total"
+      },
+      "metrics": {
+        "MAE": 2.6472651231617623e-14,
+        "MBE": 2.6472651231617623e-14,
+        "NRMSE_range": 9.803579308566076e-15,
+        "R2": 1.0,
+        "RMSE": 3.5279324985225863e-14,
+        "n": 9
+      },
+      "observed": [
+        1.3,
+        1.63304092109134,
+        2.04100036343842,
+        2.53302450998495,
+        3.11228624885283,
+        3.77478127472874,
+        4.46631289891374,
+        4.87431486417722,
+        4.89861677809857
+      ],
+      "predicted": [
+        1.3,
+        1.6330409210913424,
+        2.0410003634384357,
+        2.5330245099849793,
+        3.112286248852871,
+        3.774781274728798,
+        4.466312898913808,
+        4.874314864177243,
+        4.898616778098572
+      ],
+      "residuals_model_minus_observed": [
+        0.0,
+        2.4424906541753444e-15,
+        1.554312234475219e-14,
+        2.930988785010413e-14,
+        4.085620730620576e-14,
+        5.773159728050814e-14,
+        6.750155989720952e-14,
+        2.3092638912203256e-14,
+        1.7763568394002505e-15
+      ],
+      "scale": 3.5986167780985703
+    }
+  },
+  "data_origin": "synthetic",
+  "data_sha256": "07fdd8627b87f36c7543671fa547431a6696ce1be51275ea4fbaeaa5620ec7b6",
+  "dataset_id": "synthetic_calibration_v28",
+  "dataset_role": "calibration",
+  "dynamic_carbon_after_fit": {
+    "accounted_gC": 54.52232612986096,
+    "carbon_in_gC": 53.248,
+    "co2_emitted_gC": 8.177941179316317,
+    "error_pct": 2.3931905984468145,
+    "feed_gC": 0.0,
+    "final_stored_gC": 46.34438495054464,
+    "initial_gC": 53.248,
+    "interpretation": "Residual is not forced to zero; it exposes unrepresented carbon pools and/or inconsistency in the phenomenological model.",
+    "recovery_pct": 102.39319059844682,
+    "residual_gC": 1.2743261298609596,
+    "status": "PASS",
+    "warnings": []
+  },
+  "dynamic_nitrogen_after_fit": {
+    "accounted_gN": 1.224704591540415,
+    "effective_biomass_N_fraction_gN_gX": 0.125,
+    "error_pct": -0.024114976292651278,
+    "feed_gN": 0.0,
+    "final_biomass_gN": 1.224654194524643,
+    "final_dissolved_gN": 5.0397015772078134e-05,
+    "initial_gN": 1.225,
+    "interpretation": "The audit uses 1/Yxn as the model-consistent biomass N fraction. Unrepresented nitrogen released by lysis remains visible as residual.",
+    "nitrogen_in_gN": 1.225,
+    "recovery_pct": 99.97588502370735,
+    "residual_gN": -0.0002954084595849782,
+    "status": "PASS",
+    "warnings": []
+  },
+  "dynamic_oxygen_after_fit": {
+    "consumed_mgO2": 4616.432571505091,
+    "error_pct": -0.015467695334944295,
+    "final_dissolved_mgO2": 15.309031352887201,
+    "initial_dissolved_mgO2": 12.0,
+    "interpretation": "This is a numerical consistency identity for the liquid-phase O2 balance. It is not an independent experimental validation of kLa or OUR.",
+    "lhs_mgO2": 4632.458137369185,
+    "recovery_pct": 99.98453230466507,
+    "residual_mgO2": -0.7165345112071009,
+    "rhs_mgO2": 4631.741602857978,
+    "status": "PASS",
+    "transferred_mgO2": 4620.458137369185,
+    "warnings": []
+  },
+  "final_objective": 1.79473022642518e-27,
+  "fit_parameters": [
+    "mu_max",
+    "Yxs",
+    "Yps"
+  ],
+  "fitted_aggregate_mean_NRMSE_range": 8.040996102450319e-15,
+  "fitted_metrics": {
+    "P_g_L": {
+      "MAE": 4.297796686437828e-14,
+      "MBE": 4.060949107851128e-14,
+      "NRMSE_range": 7.784830609154362e-15,
+      "R2": 1.0,
+      "RMSE": 5.850846080186744e-14,
+      "n": 9
+    },
+    "S_g_L": {
+      "MAE": 1.152658215788607e-13,
+      "MBE": -9.316004757743535e-14,
+      "NRMSE_range": 6.53457838963052e-15,
+      "R2": 1.0,
+      "RMSE": 1.4866784971895883e-13,
+      "n": 9
+    },
+    "X_g_L": {
+      "MAE": 2.6472651231617623e-14,
+      "MBE": 2.6472651231617623e-14,
+      "NRMSE_range": 9.803579308566076e-15,
+      "R2": 1.0,
+      "RMSE": 3.5279324985225863e-14,
+      "n": 9
+    }
+  },
+  "initial_aggregate_mean_NRMSE_range": 0.2705528091286025,
+  "initial_metrics": {
+    "P_g_L": {
+      "MAE": 2.6992529652374104,
+      "MBE": 2.6992529652374104,
+      "NRMSE_range": 0.4192057227038214,
+      "R2": -0.3214378986933175,
+      "RMSE": 3.1506249559101622,
+      "n": 9
+    },
+    "S_g_L": {
+      "MAE": 5.899443577088458,
+      "MBE": -5.899443577088458,
+      "NRMSE_range": 0.30228763602579145,
+      "R2": 0.310057941208403,
+      "RMSE": 6.877330129805471,
+      "n": 9
+    },
+    "X_g_L": {
+      "MAE": 0.2362593397202327,
+      "MBE": 0.2362593397202327,
+      "NRMSE_range": 0.09016506865619472,
+      "R2": 0.9387930201168052,
+      "RMSE": 0.32446952886459185,
+      "n": 9
+    }
+  },
+  "initial_objective": 2.477168932027238,
+  "initial_parameter_sha256": "94dd0bd808e74c4fbec4eaabfc9f19b6273f9c5a89c599f568aa7a190cd882c5",
+  "initial_values": {
+    "Yps": 0.49,
+    "Yxs": 0.12,
+    "mu_max": 0.42
+  },
+  "metadata_sha256": "2af3877f323da5ddcf1cdcb14541b37c2a703149902a6a03c816ff50c772ea79",
+  "objective_reduction_factor": 1.3802458417170407e+27,
+  "optimized_parameter_sha256": "c05b73eaa927c5d2f56cd1fb9f8ae85a5fd7c66d381bfc38d876f7f2c001067d",
+  "optimized_values": {
+    "Yps": 0.4399999999999999,
+    "Yxs": 0.16000000000000067,
+    "mu_max": 0.34000000000000546
+  },
+  "optimizer": {
+    "elapsed_s": 2.2974541187286377,
+    "message": "`gtol` termination condition is satisfied.",
+    "name": "scipy.optimize.least_squares",
+    "nfev": 6,
+    "raw_status": 1,
+    "success": true
+  },
+  "scientific_limitations": [
+    "This is calibration, not independent validation.",
+    "Validation datasets must remain untouched and should be evaluated only with frozen optimized parameters.",
+    "Parameter estimates are local and depend on bounds, observable mapping, weights and initial values.",
+    "Passing C/N/O2 integrity audits is necessary but not sufficient for biological validity."
+  ],
+  "software_integrity_after_fit": {
+    "carbon_error_pct": 2.3931905984468145,
+    "carbon_status": "PASS",
+    "nitrogen_error_pct": -0.024114976292651278,
+    "nitrogen_status": "PASS",
+    "overall_status": "PASS",
+    "oxygen_error_pct": -0.015467695334944295,
+    "oxygen_status": "PASS",
+    "parameter_status": "PASS",
+    "warnings": []
+  },
+  "trace": [
+    {
+      "iteration": 0,
+      "objective": 2.477168932027238,
+      "rmse_residual": 0.3028976683345223,
+      "x": [
+        0.42,
+        0.12,
+        0.49
+      ]
+    },
+    {
+      "iteration": 1,
+      "objective": 2.477169196840089,
+      "rmse_residual": 0.3028976845246158,
+      "x": [
+        0.4200000149011612,
+        0.12,
+        0.49
+      ]
+    },
+    {
+      "iteration": 2,
+      "objective": 2.4771674250399527,
+      "rmse_residual": 0.30289757620051433,
+      "x": [
+        0.42,
+        0.12000001490116119,
+        0.49
+      ]
+    },
+    {
+      "iteration": 3,
+      "objective": 2.4771691582168502,
+      "rmse_residual": 0.3028976821632733,
+      "x": [
+        0.42,
+        0.12,
+        0.4900000149011612
+      ]
+    },
+    {
+      "iteration": 4,
+      "objective": 0.1668120352044055,
+      "rmse_residual": 0.07860167635673614,
+      "x": [
+        0.3726838411386256,
+        0.15292054438919933,
+        0.4633500906417036
+      ]
+    },
+    {
+      "iteration": 5,
+      "objective": 0.1668121158374616,
+      "rmse_residual": 0.0786016953538445,
+      "x": [
+        0.3726838560397868,
+        0.15292054438919933,
+        0.4633500906417036
+      ]
+    },
+    {
+      "iteration": 6,
+      "objective": 0.16681184000424612,
+      "rmse_residual": 0.0786016303676556,
+      "x": [
+        0.3726838411386256,
+        0.15292055929036052,
+        0.4633500906417036
+      ]
+    },
+    {
+      "iteration": 7,
+      "objective": 0.16681207695747027,
+      "rmse_residual": 0.07860168619373822,
+      "x": [
+        0.3726838411386256,
+        0.15292054438919933,
+        0.4633501055428648
+      ]
+    },
+    {
+      "iteration": 8,
+      "objective": 0.0015436332534484389,
+      "rmse_residual": 0.007561190513376303,
+      "x": [
+        0.3447234963246377,
+        0.1616669342331435,
+        0.4461348478665259
+      ]
+    },
+    {
+      "iteration": 9,
+      "objective": 0.0015436413515340303,
+      "rmse_residual": 0.007561210346807434,
+      "x": [
+        0.3447235112257989,
+        0.1616669342331435,
+        0.4461348478665259
+      ]
+    },
+    {
+      "iteration": 10,
+      "objective": 0.0015436272246479115,
+      "rmse_residual": 0.007561175747902133,
+      "x": [
+        0.3447234963246377,
+        0.16166694913430468,
+        0.4461348478665259
+      ]
+    },
+    {
+      "iteration": 11,
+      "objective": 0.0015436361098014645,
+      "rmse_residual": 0.007561197509020949,
+      "x": [
+        0.3447234963246377,
+        0.1616669342331435,
+        0.4461348627676871
+      ]
+    },
+    {
+      "iteration": 12,
+      "objective": 6.879814718234204e-07,
+      "rmse_residual": 0.00015962705050435303,
+      "x": [
+        0.340072965488447,
+        0.16007762869967,
+        0.4401584519715068
+      ]
+    },
+    {
+      "iteration": 13,
+      "objective": 6.880235898592437e-07,
+      "rmse_residual": 0.0001596319365915605,
+      "x": [
+        0.3400729803896082,
+        0.16007762869967,
+        0.4401584519715068
+      ]
+    },
+    {
+      "iteration": 14,
+      "objective": 6.88196826269788e-07,
+      "rmse_residual": 0.00015965203206763602,
+      "x": [
+        0.340072965488447,
+        0.16007764360083118,
+        0.4401584519715068
+      ]
+    },
+    {
+      "iteration": 15,
+      "objective": 6.879859751369533e-07,
+      "rmse_residual": 0.00015962757293810296,
+      "x": [
+        0.340072965488447,
+        0.16007762869967,
+        0.440158466872668
+      ]
+    },
+    {
+      "iteration": 16,
+      "objective": 4.238276351521095e-14,
+      "rmse_residual": 3.961984328647515e-08,
+      "x": [
+        0.3400000200396675,
+        0.16000001883069992,
+        0.44000003140583127
+      ]
+    },
+    {
+      "iteration": 17,
+      "objective": 6.893940398540258e-14,
+      "rmse_residual": 5.053030040202229e-08,
+      "x": [
+        0.3400000349408287,
+        0.16000001883069992,
+        0.44000003140583127
+      ]
+    },
+    {
+      "iteration": 18,
+      "objective": 1.5734758687929519e-13,
+      "rmse_residual": 7.633929789392131e-08,
+      "x": [
+        0.3400000200396675,
+        0.1600000337318611,
+        0.44000003140583127
+      ]
+    },
+    {
+      "iteration": 19,
+      "objective": 4.4679441463864366e-14,
+      "rmse_residual": 4.067916086021531e-08,
+      "x": [
+        0.3400000200396675,
+        0.16000001883069992,
+        0.44000004630699246
+      ]
+    },
+    {
+      "iteration": 20,
+      "objective": 1.79473022642518e-27,
+      "rmse_residual": 8.153004959375363e-15,
+      "x": [
+        0.34000000000000546,
+        0.16000000000000067,
+        0.4399999999999999
+      ]
+    },
+    {
+      "iteration": 21,
+      "objective": 1.4686445580902486e-14,
+      "rmse_residual": 2.332257337693065e-08,
+      "x": [
+        0.34000001490116666,
+        0.16000000000000067,
+        0.4399999999999999
+      ]
+    },
+    {
+      "iteration": 22,
+      "objective": 5.765968874111013e-14,
+      "rmse_residual": 4.621194680435486e-08,
+      "x": [
+        0.34000000000000546,
+        0.16000001490116186,
+        0.4399999999999999
+      ]
+    },
+    {
+      "iteration": 23,
+      "objective": 4.011850560994051e-15,
+      "rmse_residual": 1.2189629108984182e-08,
+      "x": [
+        0.34000000000000546,
+        0.16000000000000067,
+        0.4400000149011611
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "analysis_type": "frozen_parameter_independent_prediction",
+  "dataset_id": "synthetic_exp3_validation_v30",
+  "inputs": {
+    "calibration_lock_sha256": "cf8df43285a3bf87811f3e5bae6f18c5105f18a9f4420415537bc83fa6a08f3b",
+    "data_sha256": "468666301fb3bba92e04554ea8bc9d77d173280864f1a4438ca55a253a8b91de",
+    "metadata_sha256": "861fd0c81c32c1c74221566c0e10907c6d730f44c372d4edca785b1e7f9109fa",
+    "optimized_parameter_sha256_from_lock": "e5777ecc6d48233a0de54a751fda73f9665df78247035a92e483f285ab94ee23"
+  },
+  "no_parameter_fitting_performed": true,
+  "outputs": {
+    "independent_validation_predictions.csv": "faddcc8e142cbdf11dd434c6b388c3b60b8e20805ae2e890e3396ed943c27b1e",
+    "independent_validation_report.json": "33a5d22b357b346a8c144869e16b523c996b84444722627581318711b1e95139",
+    "independent_validation_report.md": "2a28448a1632dcc5d30abf2e67df3fc98e3e7438af2776f8127a92d0c9d98240"
+  },
+  "qualification": {
+    "qualified_external_validation": false,
+    "reasons": [
+      "dataset role 'synthetic_demo' is not an external-validation role",
+      "data origin 'synthetic' is not external experimental evidence"
+    ],
+    "status": "NOT_QUALIFIED"
+  }
+}

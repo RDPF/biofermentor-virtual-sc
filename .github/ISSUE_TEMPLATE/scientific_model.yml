@@ -1,0 +1,32 @@
+name: Scientific model question
+description: Discuss an equation, parameter assumption, calibration issue, or validation claim
+title: "[SCIENCE] "
+labels: ["science"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Scientific question or proposed change
+    validations:
+      required: true
+  - type: textarea
+    id: model_location
+    attributes:
+      label: Model location
+      description: Identify equation, parameter, function, or file if known.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or literature basis
+      description: Provide DOI/reference/data provenance when available.
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected impact
+      options:
+        - Documentation/interpretation only
+        - Parameter/default change
+        - Scientific equation/structure change
+        - Calibration/validation workflow change
+    validations:
+      required: true

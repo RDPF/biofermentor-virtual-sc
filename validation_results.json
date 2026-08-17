@@ -1,0 +1,99 @@
+{
+  "default_parameter_sha256": "879e52ef43c68ec4e631661983636a4c150a07a8657573cecfb94d5f8252fec1",
+  "numerical_self_tests": {
+    "batch": {
+      "batch_constant_volume": true,
+      "carbon_audit_finite": true,
+      "finite": true,
+      "material_states_nonnegative": true,
+      "nitrogen_audit_finite": true,
+      "oxygen_audit_finite": true,
+      "oxygen_audit_pass": true,
+      "ph_bounds": true,
+      "strict_aux_columns": true,
+      "temperature_bounds": true
+    },
+    "fed_exp": {
+      "carbon_audit_finite": true,
+      "fedbatch_non_decreasing_volume": true,
+      "finite": true,
+      "material_states_nonnegative": true,
+      "nitrogen_audit_finite": true,
+      "oxygen_audit_finite": true,
+      "oxygen_audit_pass": true,
+      "ph_bounds": true,
+      "strict_aux_columns": true,
+      "temperature_bounds": true
+    },
+    "fed_sstat": {
+      "carbon_audit_finite": true,
+      "fedbatch_non_decreasing_volume": true,
+      "finite": true,
+      "material_states_nonnegative": true,
+      "nitrogen_audit_finite": true,
+      "oxygen_audit_finite": true,
+      "oxygen_audit_pass": true,
+      "ph_bounds": true,
+      "strict_aux_columns": true,
+      "temperature_bounds": true
+    }
+  },
+  "physiological_self_tests": {
+    "ethanol_limit_zero_growth": true,
+    "low_oxygen_increases_fermentative_fraction": true,
+    "oxygen_solubility_decreases_with_temperature": true,
+    "oxygen_solubility_increases_with_pressure": true,
+    "ph_optimum_factor": true,
+    "temperature_optimum_factor": true,
+    "zero_substrate_zero_growth": true
+  },
+  "reference_cases": [
+    {
+      "carbon_error_pct": 2.9613678448425396,
+      "carbon_recovery_pct": 102.96136784484254,
+      "carbon_status": "PASS",
+      "dt_h": 0.0025,
+      "nitrogen_error_pct": -0.058294429932990215,
+      "nitrogen_recovery_pct": 99.941705570067,
+      "nitrogen_status": "PASS",
+      "overall_status": "PASS",
+      "oxygen_error_pct": -0.009076979400008416,
+      "oxygen_recovery_pct": 99.9909230206,
+      "oxygen_status": "PASS",
+      "tf_h": 12.0
+    },
+    {
+      "carbon_error_pct": 3.4718405211314787,
+      "carbon_recovery_pct": 103.47184052113148,
+      "carbon_status": "PASS",
+      "dt_h": 0.0025,
+      "nitrogen_error_pct": -0.21919198658603412,
+      "nitrogen_recovery_pct": 99.78080801341396,
+      "nitrogen_status": "PASS",
+      "overall_status": "PASS",
+      "oxygen_error_pct": -0.002195833091166462,
+      "oxygen_recovery_pct": 99.99780416690884,
+      "oxygen_status": "PASS",
+      "tf_h": 30.0
+    },
+    {
+      "carbon_error_pct": 2.6258616817764873,
+      "carbon_recovery_pct": 102.62586168177648,
+      "carbon_status": "PASS",
+      "dt_h": 0.0025,
+      "nitrogen_error_pct": -1.0565880159713872,
+      "nitrogen_recovery_pct": 98.9434119840286,
+      "nitrogen_status": "PASS",
+      "overall_status": "PASS",
+      "oxygen_error_pct": -0.0014625068404671183,
+      "oxygen_recovery_pct": 99.99853749315953,
+      "oxygen_status": "PASS",
+      "tf_h": 48.0
+    }
+  ],
+  "reference_dt_h": 0.0025,
+  "scientific_scope": "Model-integrity validation only; this does not constitute experimental biological validation.",
+  "software": "Biofermentor Virtual SC",
+  "validation_schema": "2.4",
+  "version": "3.0.0"
+}

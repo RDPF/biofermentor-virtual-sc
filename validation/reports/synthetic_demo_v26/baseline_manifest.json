@@ -1,0 +1,22 @@
+{
+  "analysis_type": "zero_fit_external_comparison",
+  "dataset_id": "synthetic_demo_v25",
+  "inputs": {
+    "data_sha256": "08380da96b972491095d78f1229ce6fc259f8dd1352d233344018f1493e4a5c5",
+    "metadata_sha256": "cab5f35616be47dc0bd08fd378dc70603b9066d8d5be095048a1048318268072",
+    "parameter_sha256": "50fc50c2dae3150f7c471a14efc29147371d408e555d3852a9804c89ab9431b6"
+  },
+  "outputs": {
+    "zero_fit_predictions.csv": "f29078bd5039c4bae7869fac1a44e336c65edc67972ea8dbe6845f2a8c92b14f",
+    "zero_fit_report.json": "fbb2ff98b97b3545d731be8deab3c34005cccac119b52dc53952482c98731ea9",
+    "zero_fit_report.md": "13359908cd6ea76431e201ec893831503534cd53d9a46208ec9402c90a7b7747"
+  },
+  "qualification": {
+    "qualified_external_validation": false,
+    "reasons": [
+      "dataset role 'synthetic_demo' is not an external-validation role",
+      "data origin 'synthetic' is not external experimental evidence"
+    ],
+    "status": "NOT_QUALIFIED"
+  }
+}

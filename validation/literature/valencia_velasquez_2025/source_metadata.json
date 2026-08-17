@@ -1,0 +1,60 @@
+{
+  "status": "source_scaffold_no_data_ingested",
+  "doi": "10.1007/s00449-025-03222-5",
+  "journal": "Bioprocess and Biosystems Engineering",
+  "year": 2025,
+  "access": "open_access",
+  "intended_use": {
+    "exp1": "calibration_candidate",
+    "exp2": "calibration_candidate",
+    "exp3": "untouched_validation_candidate"
+  },
+  "required_next_steps": [
+    "Acquire article PDF and supporting information from publisher.",
+    "Verify exact initial conditions and units from Table 1.",
+    "Inspect supporting information for numerical time-series data.",
+    "Use figure digitization only if numerical source data are unavailable.",
+    "Record license/attribution and provenance for any derived dataset.",
+    "Define mapping limitations for mixed sugars and urea before analysis."
+  ],
+  "verified_publication_facts_v2_6": {
+    "temperature_C": 30.0,
+    "airflow_VVM": 0.8,
+    "agitation_rpm": 308,
+    "initial_pH_approx": 5.0,
+    "pH_operating_range": [
+      4.0,
+      5.0
+    ],
+    "train_table1": {
+      "sucrose_g_L_mean_sd": [
+        32.7,
+        3.9
+      ],
+      "glucose_g_L_mean_sd": [
+        27.3,
+        3.8
+      ],
+      "fructose_g_L_mean_sd": [
+        27.1,
+        4.1
+      ],
+      "biomass_g_L_mean_sd": [
+        0.5,
+        0.1
+      ],
+      "urea_g_L_mean_sd": [
+        2.6,
+        0.7
+      ]
+    },
+    "test_exp3_table1": {
+      "sucrose_g_L": 39.6,
+      "glucose_g_L": 27.5,
+      "fructose_g_L": 25.8,
+      "biomass_g_L": 1.2,
+      "urea_g_L": 2.3
+    },
+    "time_series_ingested": false
+  }
+}

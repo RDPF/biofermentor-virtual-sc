@@ -1,0 +1,29 @@
+{
+  "title": "Biofermentor Virtual SC",
+  "version": "3.0.0",
+  "description": "Open, auditable virtual fermentation platform for Saccharomyces cerevisiae ethanol process-control studies. Version 3.0 separates growth-associated substrate demand from a bounded non-growth-associated fermentative catabolic flux under nitrogen limitation, with C/N/O2 integrity audits, sensitivity and practical-identifiability diagnostics, bounded parameter estimation, frozen-parameter independent-validation workflows, and a responsive Tkinter scientific interface. The new non-growth-associated catabolic parameters are phenomenological reference values and are not calibrated to a specific strain, medium, vessel or industrial process; this release does not claim quantitative experimental validation. Real-data calibration and the pending real Exp. 3 validation track remain intentionally out of scope for v3.0.0 and are reserved for a later release.",
+  "creators": [
+    {
+      "name": "Pereira Filho, Renato Dutra",
+      "affiliation": "Universidade Federal do Rio Grande — FURG"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "bioprocess control",
+    "fermentation",
+    "Saccharomyces cerevisiae",
+    "process simulation",
+    "parameter estimation",
+    "external validation",
+    "reproducible research",
+    "nitrogen limitation",
+    "non-growth-associated fermentation",
+    "phenomenological modeling",
+    "research software"
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "related_identifiers": []
+}

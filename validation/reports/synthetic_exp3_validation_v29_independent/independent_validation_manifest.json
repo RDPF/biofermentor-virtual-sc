@@ -1,0 +1,24 @@
+{
+  "analysis_type": "frozen_parameter_independent_prediction",
+  "dataset_id": "synthetic_exp3_validation_v29",
+  "inputs": {
+    "calibration_lock_sha256": "0fee52a1cc5247ea5515217dde8a77a50a17ed00e3910e4633dbb20d656f247f",
+    "data_sha256": "52b7b58323164e31552c592493308dd0876a2dfa879acfd729f5636c3d846dd9",
+    "metadata_sha256": "96c54d8427291f0c310cf50ac7bd9806b6d0b1cab9aa02b82d5a4f0c6a1f486f",
+    "optimized_parameter_sha256_from_lock": "c05b73eaa927c5d2f56cd1fb9f8ae85a5fd7c66d381bfc38d876f7f2c001067d"
+  },
+  "no_parameter_fitting_performed": true,
+  "outputs": {
+    "independent_validation_predictions.csv": "092fcf13494d6cd16b5dd0c073dd8f2f1270cbf16c43bb01f745f02f89a336ef",
+    "independent_validation_report.json": "6832a39c957b56781fa9a4d61b0dcab337be70225631ac52e687302ce052a3f8",
+    "independent_validation_report.md": "3f330f14c7099058a59a176fdbc4fcfdbbeb074de08324cdb7c8102f4dfe894e"
+  },
+  "qualification": {
+    "qualified_external_validation": false,
+    "reasons": [
+      "dataset role 'synthetic_demo' is not an external-validation role",
+      "data origin 'synthetic' is not external experimental evidence"
+    ],
+    "status": "NOT_QUALIFIED"
+  }
+}

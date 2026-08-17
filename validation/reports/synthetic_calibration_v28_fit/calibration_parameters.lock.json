@@ -1,0 +1,17 @@
+{
+  "analysis_type": "bounded_parameter_estimation",
+  "dataset_id": "synthetic_calibration_v28",
+  "fit_parameters": [
+    "mu_max",
+    "Yxs",
+    "Yps"
+  ],
+  "optimized_parameter_sha256": "c05b73eaa927c5d2f56cd1fb9f8ae85a5fd7c66d381bfc38d876f7f2c001067d",
+  "optimized_values": {
+    "Yps": 0.4399999999999999,
+    "Yxs": 0.16000000000000067,
+    "mu_max": 0.34000000000000546
+  },
+  "software_version": "2.9.1",
+  "warning": "Use this lock for downstream validation; do not refit validation datasets."
+}
